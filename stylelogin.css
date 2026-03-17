@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0f1c, #1e1e2f);
+}
+
+/* Section centrée */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image bannière centrée et stylée */
+.banner {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 255, 200, 0.3);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.banner:hover {
+  transform: scale(1.03);
+}
+
+/* Bouton */
+.btn {
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #1e90ff, #00ffc8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, orange, #1e90ff);
+  box-shadow: 0 8px 20px rgba(0, 255, 200, 0.5);
+}
+
+/* Loader */
+.loader {
+  display: none;
+  margin-top: 20px;
+  border: 5px solid rgba(255,255,255,0.2);
+  border-top: 5px solid #00ffc8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

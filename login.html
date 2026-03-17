@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil</title>
+<link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+
+<section class="hero">
+
+  <!-- IMAGE CENTRÉE -->
+  <img src="pdf/banner.png" class="banner">
+
+  <!-- BOUTON -->
+  <button id="enterBtn" class="btn">Découvrir mon portfolio</button>
+  <div id="loader" class="loader"></div>
+
+</section>
+
+<script>
+  const button = document.getElementById('enterBtn');
+  const loader = document.getElementById('loader');
+
+  button.addEventListener('click', () => {
+    button.style.display = 'none';
+    loader.style.display = 'block';
+
+    setTimeout(() => {
+      window.location.href = 'portfolio.html';
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Peter Iliomo | Cybersecurity Analyst</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>Peter Dur Iliomo</h1>
+    <p>Spécialiste en Sécurité Informatique | Analyste Cybersécurité</p>
+    <nav>
+        <ul>
+            <li><a href="#about">👤 À propos</a></li>
+            <li><a href="#skills">🛠️ Expertise</a></li>
+            <li><a href="#stack">💻 Tech & Outils</a></li>
+            <li><a href="#certificates">📜 Formations</a></li>
+            <li><a href="#projects">💼 Réalisations</a></li>
+            <li><a href="#contact">✉️ Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about" class="card">
+    <h2>À propos</h2>
+    <p>
+        Je suis <strong>Peter Dur Iliomo</strong>, spécialiste en cybersécurité basé à Kinshasa, 
+        passionné par la protection des systèmes informatiques et la sécurité des données. 
+        Avec une expertise en <strong>analyse réseau, gestion des vulnérabilités, sécurité des bases de données</strong> 
+        et prévention des attaques, je contribue à renforcer la résilience des infrastructures IT 
+        et à anticiper les menaces émergentes. Mon approche allie rigueur technique et veille constante 
+        pour assurer un environnement sécurisé et performant.
+    </p>
+</section>
+<section id="skills" class="card">
+    <h2>Expertise</h2>
+    <ul>
+        <li>🛡️ Évaluation des vulnérabilités (OpenVAS, Nmap)</li>
+        <li>📡 Analyse du trafic réseau (Wireshark)</li>
+        <li>💻 Hardening Windows et Linux</li>
+        <li>🗄️ Sécurité des bases de données MySQL</li>
+        <li>🔑 Authentification sécurisée JWT</li>
+        <li>🚨 Surveillance et réponse aux incidents</li>
+        <li>⚡ Tests d’intrusion avec Metasploit Framework</li>
+    </ul>
+</section>
+<section id="stack" class="card">
+    <h2>Tech & Outils</h2>
+
+    <h3>🖥️ Systèmes</h3>
+    <p>🐧 Linux | 🪟 Windows Server</p>
+
+    <h3>🛠️ Outils</h3>
+    <p>📡 Wireshark | 🔍 Nmap | 🛡️ OpenVAS | ⚡ Metasploit</p>
+
+    <h3>💻 Technologies</h3>
+    <p>🗄️ MySQL | ☕ Java | 🌱 Spring Boot | 🔧 Git</p>
+</section>
+
+<section id="certificates" class="card">
+    <h2>🎓 Formations & Certifications</h2>
+    <label for="certSelect">Choisir une certification :</label>
+    <select id="certSelect">
+        <option value="">Sélectionnez</option>
+        <option value="pdf/Google1.pdf.pdf">🛡️ Google Cybersecurity</option>
+        <option value="pdf/Cisco_Ethical.pdf.pdf">🕵️‍♂️ Cisco Ethical Hacker</option>
+        <option value="pdf/Gestion_projet.pdf.pdf">📊 Google Project Management</option>
+        <option value="pdf/IT SUPPORT.pdf">💻 Google IT Support</option>
+        <option value="pdf/Introduction.pdf">🔐 Cisco Introduction to Cybersecurity</option>
+        <option value="pdf/IoT.pdf">🌐 Cisco Introduction à l’Internet des Objets (IoT)</option>
+        <option value="pdf/attestation1.pdf.pdf">🎓 Attestation Licence</option>
+        <option value="pdf/I.pdf">🎓 Attestation Master</option>
+    </select>
+
+    <script>
+  // Pour les certifications
+  const certSelect = document.getElementById("certSelect");
+  certSelect.addEventListener("change", function() {
+      const url = this.value;
+      if(url) {
+          window.open(url, "_blank"); // ouvre le PDF dans un nouvel onglet
+          this.value = ""; // remet la sélection à vide après ouverture
+      }
+  });
+
+</script>
+</section>
+
+<section id="projects" class="card">
+    <h2>🚀 Réalisations & Projets</h2>
+    <label for="projectSelect">Choisir un projet :</label>
+    <select id="projectSelect">
+        <option value="">Sélectionnez</option>
+        <option value="pdf/Lab1.pdf">🛡️ Lab Gestion des Vulnérabilités</option>
+        <option value="pdf/Lab2.pdf">📘 Mémoire Licence</option>
+        <option value="pdf/Project.pdf">💉 Rendez-vous Médicaux Sécurisé</option>
+    </select>
+
+    <script>
+
+  // Pour les projets
+  const projectSelect = document.getElementById("projectSelect");
+  projectSelect.addEventListener("change", function() {
+      const url = this.value;
+      if(url) {
+          window.open(url, "_blank"); // ouvre le PDF dans un nouvel onglet
+          this.value = ""; // remet la sélection à vide après ouverture
+      }
+  });
+</script>
+</section>
+
+<section id="cv" class="card">
+    <h2>📄 Mon CV</h2>
+    <p>Vous pouvez télécharger mon CV complet ici :</p>
+    <a href="pdf/cv.pdf.pdf" target="_blank" class="btn-cv">⬇️ Télécharger mon CV</a>
+</section>
+
+<<section id="contactSelectSection" class="card">
+    <h2>✉️ Contact & Réseaux </h2>
+    <label for="contactSelect">Choisir un contact :</label>
+    <select id="contactSelect">
+        <option value="">Sélectionnez</option>
+        <option value="mailto:peteriliomo@proton.me">📧 Email : peteriliomo@proton.me</option>
+        <option value="https://www.facebook.com/tonprofil" >📘 Facebook : Peter Dur Aigle Chasseur</option>
+        <option value="https://wa.me/243819218506" >💬 WhatsApp : +243 819 218 506</option>
+        <option value="https://www.linkedin.com/in/peter-iliomo/" >💼 LinkedIn : Peter Iliomo</option>
+    </select>
+</section>
+<footer>
+    <p>© 2026 Peter Dur Iliomo</p>
+</footer>
+
+<script>
+// ==== Certifications ====
+document.getElementById('certSelect').addEventListener('change', function() {
+    var pdf = this.value;
+    var certDiv = document.getElementById('certPreview');
+    var certImg = document.getElementById('certImage');
+    if(pdf) {
+        window.open(pdf, '_blank');
+
+        // afficher miniature (nom du PDF transformé en PNG)
+        var imgName = pdf.replace(".pdf", ".png");
+        certImg.src = imgName;
+        certDiv.style.display = "block";
+    } else {
+        certDiv.style.display = "none";
+    }
+});
+
+// ==== Projets ====
+document.getElementById('projectSelect').addEventListener('change', function() {
+    var pdf = this.value;
+    var projDiv = document.getElementById('projectPreview');
+    var projImg = document.getElementById('previewImage');
+    if(pdf) {
+        window.open(pdf, '_blank');
+
+        // afficher miniature (nom du PDF transformé en PNG)
+        var imgName = pdf.replace(".pdf", ".png");
+        projImg.src = imgName;
+        projDiv.style.display = "block";
+    } else {
+        projDiv.style.display = "none";
+    }
+});
+</script>
+
+<script>
+  const contactSelect = document.getElementById("contactSelect");
+  contactSelect.addEventListener("change", function() {
+      const url = this.value;
+      if(url) {
+          window.open(url, "_blank"); // ouvre le lien dans un nouvel onglet
+          this.value = ""; // remet la sélection à vide
+      }
+  });
+</script>
+</body>
+</html>

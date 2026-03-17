@@ -1,0 +1,214 @@
+/* ===== Body et global ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0a0f1c 0%, #1e1e2f 100%);
+    color: #fff;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 40px;
+    background: #111827;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 42px;
+    color: #00ffc8;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #a0f0d8;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Section Card ===== */
+.card {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 255, 200, 0.2);
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 255, 200, 0.4);
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles interactifs pour tous les h2 */
+
+.card h2 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espace entre emoji et texte */
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none; /* pas de soulignement par défaut */
+    transition: all 0.3s ease;
+}
+
+.card h2:hover {
+    color: #ffcc00; /* change la couleur au survol */
+    text-decoration: none; /* pas de soulignement au survol */
+}
+/* ===== Titres ===== */
+h2 {
+    color: #00ffc8;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #a0f0d8;
+    margin-top: 10px;
+}
+
+/* ===== Listes ===== */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== Combobox / select ===== */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #00ffc8;
+}
+
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ffc8;
+    background-color: #111827;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #00ff99;
+    background-color: #1f2937;
+}
+
+select:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* ===== Preview image projets ===== */
+#projectPreview img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 255, 200, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projectPreview img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 255, 200, 0.5);
+}
+
+/* ===== Bouton CV ===== */
+.btn-cv {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #1e90ff, #00ffc8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 255, 200, 0.4);
+    background: linear-gradient(90deg, #00ffc8, #1e90ff);
+}
+
+/* ===== Section Contact & Réseaux ===== */
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espace entre emoji et texte */
+}
+
+.socials a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background: #111827;
+    color: #a0f0d8;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
